@@ -1,0 +1,76 @@
+
+Clover EFI installer log - Wed Nov 25 12:22:32 CST 2020
+Installer version: r5127 (commit: c9cfc183d) EFI bootloader
+======================================================
+/dev/disk0 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *250.1 GB   disk0
+   1:                        EFI ⁨EFI⁩                     209.7 MB   disk0s1
+   2:                 Apple_APFS ⁨Container disk1⁩         249.8 GB   disk0s2
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +249.8 GB   disk1
+                                 Physical Store disk0s2
+   1:                APFS Volume ⁨MacOS - Data⁩            115.9 GB   disk1s1
+   2:                APFS Volume ⁨Preboot⁩                 314.3 MB   disk1s2
+   3:                APFS Volume ⁨Recovery⁩                655.5 MB   disk1s3
+   4:                APFS Volume ⁨VM⁩                      5.4 GB     disk1s4
+   5:                APFS Volume ⁨MacOS⁩                   14.9 GB    disk1s5
+   6:              APFS Snapshot ⁨com.apple.os.update-...⁩ 14.9 GB    disk1s5s1
+
+/dev/disk2 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *240.1 GB   disk2
+   1:                        EFI ⁨EFI⁩                     209.7 MB   disk2s1
+   2:       Microsoft Basic Data ⁨Windows⁩                 239.3 GB   disk2s2
+   3:           Windows Recovery ⁨⁩                        541.1 MB   disk2s3
+
+/dev/disk3 (internal, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *2.0 TB     disk3
+   1:               Windows_NTFS ⁨Mac Storage⁩             2.0 TB     disk3s1
+
+/dev/disk4 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        +103.8 MB   disk4
+   1:                  Apple_HFS ⁨PDF Expert 2.5.14⁩       103.8 MB   disk4s1
+
+/dev/disk5 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        +201.3 MB   disk5
+   1:                  Apple_HFS ⁨PDF Expert 2.5.14⁩       201.3 MB   disk5s1
+
+/dev/disk6 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        +101.7 MB   disk6
+   1:                  Apple_HFS ⁨CleanMyMac X 4.7.1⁩      101.7 MB   disk6s1
+
+/dev/disk7 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        +191.9 MB   disk7
+   1:                  Apple_HFS ⁨CleanMyMac X 4.7.1⁩      191.8 MB   disk7s1
+
+/dev/disk8 (disk image):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     Apple_partition_scheme                        +96.0 MB    disk8
+   1:        Apple_partition_map ⁨⁩                        32.3 KB    disk8s1
+   2:                  Apple_HFS ⁨Charles Proxy v4.6.1⁩    96.0 MB    disk8s2
+
+Target volume /Volumes/MacOS on disk1 is APFS on physical store disk0s2
+Executing: /usr/bin/kmutil load -p /System/Library/Extensions/msdosfs.kext
+======================================================
+Backing up EFI files
+
+Backing up /Volumes/MacOS/Private/tmp/EFIROOTDIR/EFI folder to /Volumes/MacOS//Users/justin/Clover EFI Backups/r5126/2020-11-25-12h22/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+Removing UEFI/AptioMemoryFix.efi because OpenRuntime.efi is installed
+Removing UEFI/OcQuirks.efi because OpenRuntime.efi is installed
+
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
